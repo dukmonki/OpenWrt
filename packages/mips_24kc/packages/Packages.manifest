@@ -1,0 +1,415 @@
+Package: boost-date_time
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+Source: feeds/packages/libs/boost
+SourceName: boost-date_time
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 16635
+Filename: boost-date_time_1.71.0-4_mips_24kc.ipk
+Size: 17324
+SHA256sum: 65ee7024e0a6e863462b623f590feb4d84c5b7c8d33ce2a5c2f6e0e35c9bc48b
+Description:  This package contains the Boost date_time library.
+
+Package: boost-program_options
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+Source: feeds/packages/libs/boost
+SourceName: boost-program_options
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 112215
+Filename: boost-program_options_1.71.0-4_mips_24kc.ipk
+Size: 112771
+SHA256sum: eb027a8f4eea3f6eee9f554bdd2ead530d1ed4c59320841b56757d693f4c8beb
+Description:  This package contains the Boost program_options library.
+
+Package: boost-system
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+Source: feeds/packages/libs/boost
+SourceName: boost-system
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 1098
+Filename: boost-system_1.71.0-4_mips_24kc.ipk
+Size: 1889
+SHA256sum: af03a2e7a36af6827684146f95ff3f1f44a5576bdb9339b35d9ce60e090e6a68
+Description:  This package contains the Boost system library.
+
+Package: boost
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+Source: feeds/packages/libs/boost
+SourceName: boost
+License: BSL-1.0
+LicenseFiles: LICENSE_1_0.txt
+Section: libs
+Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: boost_1.71.0-4_mips_24kc.ipk
+Size: 1237
+SHA256sum: 0221b101ecb5069f6f8ae4ab1738a3573d2527e4984709312f18c15dd8d586c7
+Description:  This package provides the Boost v1.71.0 libraries.
+ Boost is a set of free, peer-reviewed, portable C++ source libraries.
+ 
+ This package provides the following run-time libraries:
+ - atomic
+ - chrono
+ - container
+ - context
+ - contract
+ - coroutine and coroutine2 (Coroutine is deprecated - use Coroutine2)
+ - date_time
+ - exception
+ - filesystem
+ - fiber
+ - graph
+ - - graph-parallel
+ - iostreams
+ - locale (Requires kernel being compiled with full language support)
+ - log
+ - math
+ - program_options
+ - python
+ - python3
+ - random
+ - regex
+ - serialization and wserialization
+ - stackstrace
+ - system
+ - thread
+ - timer
+ - type_erasure
+ - wave
+ 
+ There are many more header-only libraries supported by Boost.
+ See more at http://www.boost.org/doc/libs/1_71_0/
+
+Package: coreutils-base64
+Version: 8.23-3
+Depends: libc, coreutils
+Source: feeds/packages/utils/coreutils
+SourceName: coreutils-base64
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 17959
+Filename: coreutils-base64_8.23-3_mips_24kc.ipk
+Size: 18689
+SHA256sum: 5405289db6769df17273f58e5d55060fa8e7a462fdeacfdea11cc37a41a749bc
+Description:  Full version of standard GNU base64 utility.
+
+Package: coreutils
+Version: 8.23-3
+Depends: libc
+Source: feeds/packages/utils/coreutils
+SourceName: coreutils
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: coreutils_8.23-3_mips_24kc.ipk
+Size: 921
+SHA256sum: b638263017f06a029d54d1d2ceec8af514ab8d7ff94d25c0292a349c5f6dab0a
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: ddns-scripts
+Version: 2.7.8-3
+Source: feeds/packages/net/ddns-scripts
+SourceName: ddns-scripts
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 14710
+Filename: ddns-scripts_2.7.8-3_all.ipk
+Size: 15775
+SHA256sum: 6acc7755701686be1e3613b479343d6a573ca5a2bf6da9d7a31954053f446be4
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
+
+Package: etherwake
+Version: 1.09-4
+Depends: libc
+Source: feeds/packages/net/etherwake
+SourceName: etherwake
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mips_24kc
+Installed-Size: 4859
+Filename: etherwake_1.09-4_mips_24kc.ipk
+Size: 5773
+SHA256sum: c25a513d565c97fc2ff31d16c350b81fa2223e7c76aa02ca9e2e6bc59cc7c57a
+Description:  You can wake up WOL compliant Computers which have been powered down to
+ sleep mode or start WOL compliant Computers with a BIOS feature.
+ WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
+ to turn on a computer from another location over a network connection.
+ ether-wake also supports WOL passwords.
+
+Package: libcap
+Version: 2.26-1
+Depends: libc
+Source: feeds/packages/libs/libcap
+SourceName: libcap
+License: GPL-2.0
+LicenseFiles: License
+Section: libs
+Maintainer: Paul Wassi <p.wassi@gmx.at>
+Architecture: mips_24kc
+Installed-Size: 6111
+Filename: libcap_2.26-1_mips_24kc.ipk
+Size: 6827
+SHA256sum: 0f3b8f6871aac4b7d8c6d8f9600b6cd4d73a774c34442915aedfac1a68c55017
+Description:  Linux capabilities library
+
+Package: libev
+Version: 4.22-1
+Depends: libc
+Source: feeds/packages/libs/libev
+SourceName: libev
+License: BSD-2-Clause
+Section: libs
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Architecture: mips_24kc
+Installed-Size: 20896
+Filename: libev_4.22-1_mips_24kc.ipk
+Size: 21703
+SHA256sum: 810bb648b86cfe4defcc4d02e79273136bddd3f25938c661ba87978414f63af9
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libnet-1.2.x
+Version: 1.2-rc3-4
+Depends: libc, libpcap
+Source: feeds/packages/libs/libnet-1.2.x
+SourceName: libnet-1.2.x
+License: GPL-2.0
+Section: libs
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Architecture: mips_24kc
+Installed-Size: 29720
+Filename: libnet-1.2.x_1.2-rc3-4_mips_24kc.ipk
+Size: 30498
+SHA256sum: dae3eb810bf7022b52d29c4c1ea841163ea78302bba64bdd7cec2aafdaca9a92
+Description:  Low-level packet creation library
+
+Package: libpcre
+Version: 8.41-2
+Depends: libc
+Source: feeds/packages/libs/pcre
+SourceName: libpcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mips_24kc
+Installed-Size: 80423
+Filename: libpcre_8.41-2_mips_24kc.ipk
+Size: 81292
+SHA256sum: 66c37b64b7ea54ba2d7673e1bd2f7f3be739c228421370a105c7ae9bedc9f513
+Description:  A Perl Compatible Regular Expression library
+
+Package: libsodium
+Version: 1.0.16-1
+Depends: libc
+Source: feeds/packages/libs/libsodium
+SourceName: libsodium
+License: ISC
+Section: libs
+Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 132448
+Filename: libsodium_1.0.16-1_mips_24kc.ipk
+Size: 133560
+SHA256sum: a7a722dd7c9de42195ee942a944b959b1fe7891d48956ffc7eb2d2aed63491e7
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: libuv1
+Version: 1.34.2-1
+Depends: libc, libpthread, librt
+Provides: libuv
+Source: feeds/packages/libs/libuv
+SourceName: libuv
+License: MIT
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mips_24kc
+Installed-Size: 52558
+Filename: libuv1_1.34.2-1_mips_24kc.ipk
+Size: 53279
+SHA256sum: e886d0637720a57a190b45824462200a57d46d9f1545432822b4ec6095cba865
+Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
+ was primarily developed for use by Node.js, but it's also used by Luvit, Julia,
+ pyuv, and others.
+
+Package: libwebsockets-full
+Version: 2.4.1-2
+Depends: libc, zlib, libcap, libopenssl1.1, libuv1
+Provides: libwebsockets
+Source: feeds/packages/libs/libwebsockets
+SourceName: libwebsockets-full
+License: LGPL-2.1+exception
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Karl Palsson <karlp@etactica.com>
+Architecture: mips_24kc
+Installed-Size: 78909
+Filename: libwebsockets-full_2.4.1-2_mips_24kc.ipk
+Size: 79184
+SHA256sum: 38aa7b385e5c5c29369a4db43aaddc45a25c3a2718761c93caddaae1150ce892
+Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
+
+Package: miniupnpd
+Version: 2.0.20170421-3
+Depends: libc, iptables, libip4tc2, libuuid
+Source: feeds/packages/net/miniupnpd
+SourceName: miniupnpd
+License: BSD-3-Clause
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: mips_24kc
+Installed-Size: 47205
+Filename: miniupnpd_2.0.20170421-3_mips_24kc.ipk
+Size: 48061
+SHA256sum: 52ee929901f5a24d6e9c33831d1f818e43fa3238c7e1198595f90b154e343135
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mwan3
+Version: 2.6.18-1
+Depends: libc, ip, ipset, iptables, iptables-mod-conntrack-extra, iptables-mod-ipopt, jshn
+Source: feeds/packages/net/mwan3
+SourceName: mwan3
+License: GPLv2
+Section: net
+Maintainer: Florian Eckert <fe@dev.tdt.de>
+Architecture: all
+Installed-Size: 11105
+Filename: mwan3_2.6.18-1_all.ipk
+Size: 12125
+SHA256sum: 04b5b9f8b94ab77cec1d590cf9349d3db45754d5cbe09d414623ed32b7afc5cd
+Description:  Hotplug script which makes configuration of multiple WAN interfaces simple
+ and manageable. With loadbalancing/failover support for up to 250 wan
+ interfaces, connection tracking and an easy to manage traffic ruleset.
+
+Package: nano
+Version: 3.1-1
+Depends: libc, libncurses6
+Source: feeds/packages/utils/nano
+SourceName: nano
+License: GPL-3.0+
+LicenseFiles: COPYING
+Section: utils
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>, Hannu Nyman <hannu.nyman@iki.fi>
+Architecture: mips_24kc
+Installed-Size: 57282
+Filename: nano_3.1-1_mips_24kc.ipk
+Size: 58013
+SHA256sum: fa4dd5e27cb36e3b6902de55da24e22b4ffc633737d3f75ef42bb1ec6f9f74ad
+Description:  Nano (Nano's ANOther editor, or Not ANOther editor) is an enhanced clone
+ of the Pico text editor.
+
+Package: nlbwmon
+Version: 2019-06-06-4574e6e8-1
+Depends: libc, libubox20170601, libnl-tiny, zlib, kmod-nf-conntrack-netlink
+Source: feeds/packages/net/nlbwmon
+SourceName: nlbwmon
+License: ISC
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mips_24kc
+Installed-Size: 15826
+Filename: nlbwmon_2019-06-06-4574e6e8-1_mips_24kc.ipk
+Size: 16599
+SHA256sum: 515e43977ec43f4d9532f33750db1e1d97efc84ead1b03e2bbaf4d81aedf4e5e
+Description:  LEDE Traffic Usage Monitor
+
+Package: shadowsocks-libev-ss-local
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, libpcre
+Source: feeds/packages/net/shadowsocks-libev
+SourceName: shadowsocks-libev-ss-local
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 46978
+Filename: shadowsocks-libev-ss-local_3.3.4-1_mips_24kc.ipk
+Size: 47102
+SHA256sum: 647c6062671863388492f2d2a9be40f1007d978143b13e42b70a2e33af389880
+Description:  shadowsocks-libev ss-local
+
+Package: shadowsocks-libev-ss-redir
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium
+Source: feeds/packages/net/shadowsocks-libev
+SourceName: shadowsocks-libev-ss-redir
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 40535
+Filename: shadowsocks-libev-ss-redir_3.3.4-1_mips_24kc.ipk
+Size: 40776
+SHA256sum: 53cd77a94657327416e78fba24913dc13c28b2d4cd1cdda986257ba7d4766cc4
+Description:  shadowsocks-libev ss-redir
+
+Package: ttyd
+Version: 1.4.0-1
+Depends: libc, libopenssl1.1, libjson-c, libpthread, libwebsockets-full
+Source: feeds/packages/utils/ttyd
+SourceName: ttyd
+License: MIT
+LicenseFiles: LICENSE
+Section: utils
+Maintainer: Shuanglei Tao <tsl0922@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 145907
+Filename: ttyd_1.4.0-1_mips_24kc.ipk
+Size: 146365
+SHA256sum: b04b2ceb910b4f4d349a36acec69e09812eeab7a2fa6d475652428b199b836e5
+Description:  ttyd is a command-line tool for sharing terminal over the web.
+
+Package: wget
+Version: 1.20.3-3
+Depends: libc, libpcre, zlib, libopenssl1.1, librt
+Provides: gnu-wget
+Alternatives: 300:/usr/bin/wget:/usr/bin/wget-ssl
+Source: feeds/packages/net/wget
+SourceName: wget
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mips_24kc
+Installed-Size: 182646
+Filename: wget_1.20.3-3_mips_24kc.ipk
+Size: 183178
+SHA256sum: c9afa85166e766eb86aa501fda89dbb93065072d8a366ecb47dfba694aff6d2a
+Description:  Wget is a network utility to retrieve files from the Web using http
+ and ftp, the two most widely used Internet protocols. It works
+ non-interactively, so it will work in the background, after having
+ logged off. The program supports recursive retrieval of web-authoring
+ pages as well as ftp sites -- you can use wget to make mirrors of
+ archives and home pages or to travel the Web like a WWW robot.
+ This package is built with SSL support.
+
