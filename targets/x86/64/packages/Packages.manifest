@@ -1,0 +1,800 @@
+Package: base-files
+Version: 204.2-r10947-65030d81f3
+Depends: libc, netifd, procd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
+Source: package/base-files
+SourceName: base-files
+License: GPL-2.0
+Section: base
+Architecture: x86_64
+Installed-Size: 41444
+Filename: base-files_204.2-r10947-65030d81f3_x86_64.ipk
+Size: 42453
+SHA256sum: 66e84c68a5d7f433bae0402180580fae8bf337084cb4672fc06eea904433cc7a
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: fstools
+Version: 2020-01-18-189b41b6-1
+Depends: libc, ubox
+Source: package/system/fstools
+SourceName: fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: x86_64
+Installed-Size: 16051
+Filename: fstools_2020-01-18-189b41b6-1_x86_64.ipk
+Size: 16708
+SHA256sum: ceb03932425cdf0ce0cbedf38dd10caeec1fe8d991b22f1b7a7faf2841a45e3b
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2
+Depends: libc
+Source: package/system/fwtool
+SourceName: fwtool
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 3747
+Filename: fwtool_2_x86_64.ipk
+Size: 4470
+SHA256sum: 9944ebfd90d5871d33c7aba8ec1b18d4546a302c3ccc9cfa62661ff2e40a6f53
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables
+Version: 1.8.3-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+SourceName: ip6tables
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 215
+Filename: ip6tables_1.8.3-1_x86_64.ipk
+Size: 913
+SHA256sum: ba9a2a61e3c89cc808bd133fc3c9b11607e47465469ef7e434e9d910267f18c6
+Description:  IPv6 firewall administration tool
+
+Package: iptables-mod-tproxy
+Version: 1.8.3-1
+Depends: libc, iptables, kmod-ipt-tproxy
+Source: package/network/utils/iptables
+SourceName: iptables-mod-tproxy
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 3375
+Filename: iptables-mod-tproxy_1.8.3-1_x86_64.ipk
+Size: 4108
+SHA256sum: 538a054ac1a177c44eb4d555650ae0429d5efe1648b5deeb9693e5fd009ae1ed
+Description:  Transparent proxy iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables
+Version: 1.8.3-1
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+Source: package/network/utils/iptables
+SourceName: iptables
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 25541
+Filename: iptables_1.8.3-1_x86_64.ipk
+Size: 26389
+SHA256sum: fb973f82abfcd0ca6d80e1dd9a13b59e6f3e44a2ea452cb88a09ac45839f2ec0
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: kmod-bnx2
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), bnx2-firmware
+Source: package/kernel/linux
+SourceName: kmod-bnx2
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 37226
+Filename: kmod-bnx2_4.14.171-1_x86_64.ipk
+Size: 38008
+SHA256sum: 4a980f2c776114237642e3ba48ee0ba8e69b87788351351cbe1ade36ead6997e
+Description:  Kernel module for the BCM5706/5708/5709/5716 ethernet adapter
+
+Package: kmod-button-hotplug
+Version: 4.14.171-3
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-input-core
+Source: package/kernel/button-hotplug
+SourceName: kmod-button-hotplug
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 2757
+Filename: kmod-button-hotplug_4.14.171-3_x86_64.ipk
+Size: 3550
+SHA256sum: ce455ba84465058d5384696656b1eea932fa4e18bf3899368b322563c4027c1f
+Description:  Kernel module to generate button uevent-s from input subsystem events.
+ If your device uses GPIO buttons, see gpio-button-hotplug.
+
+Package: kmod-e1000
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-e1000
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 48067
+Filename: kmod-e1000_4.14.171-1_x86_64.ipk
+Size: 48878
+SHA256sum: e367e74624b9468fdda84450648f26714585776142bf74c31b6f2be157f5b5f4
+Description:  Kernel modules for Intel(R) PRO/1000 PCI Ethernet adapters.
+
+Package: kmod-e1000e
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ptp
+Source: package/kernel/linux
+SourceName: kmod-e1000e
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 76437
+Filename: kmod-e1000e_4.14.171-1_x86_64.ipk
+Size: 76897
+SHA256sum: e65265d700f3b9a4151371acedc77f448a8d9cea8f40ea05b03edd09bb389cea
+Description:  Kernel modules for Intel(R) PRO/1000 PCIe Ethernet adapters.
+
+Package: kmod-hwmon-core
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 105
+Filename: kmod-hwmon-core_4.14.171-1_x86_64.ipk
+Size: 827
+SHA256sum: 4a65a3e98ff5d01fa052ca37f8b82e58f119d8b440a948256c10eb9ab2fe11cf
+Description:  Kernel modules for hardware monitoring
+
+Package: kmod-i2c-algo-bit
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-i2c-core
+Source: package/kernel/linux
+SourceName: kmod-i2c-algo-bit
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 191
+Filename: kmod-i2c-algo-bit_4.14.171-1_x86_64.ipk
+Size: 930
+SHA256sum: 6b2aac9d6ef9d23ade7a1449c85479ace501ebac1b0785aef37c16047940cdef
+Description:  Kernel modules for I2C bit-banging interfaces
+
+Package: kmod-i2c-core
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-i2c-core
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 4067
+Filename: kmod-i2c-core_4.14.171-1_x86_64.ipk
+Size: 4800
+SHA256sum: 6806d99bff4eef9afb924447ab33f50970cea4ddbd119b3bee73d423071358b0
+Description:  Kernel modules for I2C support
+
+Package: kmod-igb
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-i2c-core, kmod-i2c-algo-bit, kmod-ptp, kmod-hwmon-core
+Source: package/kernel/linux
+SourceName: kmod-igb
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 72820
+Filename: kmod-igb_4.14.171-1_x86_64.ipk
+Size: 73444
+SHA256sum: 644bf6eddfd67956d61910d7e13c09353a83da5bd8b4d0fd296eba293046e2c3
+Description:  Kernel modules for Intel(R) 82575/82576 PCI-Express Gigabit Ethernet adapters.
+
+Package: kmod-input-core
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 105
+Filename: kmod-input-core_4.14.171-1_x86_64.ipk
+Size: 827
+SHA256sum: 41cba1e4e0d53a38d064bbcb61b7948d19e33796f30de1ed24821d26be837bcb
+Description:  Kernel modules for support of input device
+
+Package: kmod-ip6tables
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ip6tables
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 5596
+Filename: kmod-ip6tables_4.14.171-1_x86_64.ipk
+Size: 6351
+SHA256sum: 2d92c414bd447ccecafd402057660f9cd34f0dcf9a58a8756656b14fdf080107
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 2353
+Filename: kmod-ipt-conntrack_4.14.171-1_x86_64.ipk
+Size: 3149
+SHA256sum: aa880038e00ca89b0882030985fbd42b11bf15e6aac0f76c1975d18130b0a43d
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nf-reject, kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 14205
+Filename: kmod-ipt-core_4.14.171-1_x86_64.ipk
+Size: 14996
+SHA256sum: 1ad29fae2fb273dff75fb60d09df9ffa8cae5b43df5f1d3d451718c691997c7b
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-ipset
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ipt-core, kmod-nfnetlink
+Source: package/kernel/linux
+SourceName: kmod-ipt-ipset
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 127550
+Filename: kmod-ipt-ipset_4.14.171-1_x86_64.ipk
+Size: 127993
+SHA256sum: 9714d2f42e53ffa55a44abd0ebe8e049f8d8d9b372dfee83f694660efe978fe2
+Description:  IPset netfilter modules
+
+Package: kmod-ipt-nat
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-ipt-nat
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 3292
+Filename: kmod-ipt-nat_4.14.171-1_x86_64.ipk
+Size: 4057
+SHA256sum: 4f913a63da0aff24a0b77cca26e89a5579f7a15dddea4a44bff9a2e4d2edc3ef
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ipt-core, kmod-nf-flow
+Source: package/kernel/linux
+SourceName: kmod-ipt-offload
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 2992
+Filename: kmod-ipt-offload_4.14.171-1_x86_64.ipk
+Size: 3739
+SHA256sum: 9899611a1c82fa411c1e91b6ebaeb2f39a5caea8756691a34bcbbbce5b5394fc
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-ipt-tproxy
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ip6tables, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-tproxy
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 6930
+Filename: kmod-ipt-tproxy_4.14.171-1_x86_64.ipk
+Size: 7724
+SHA256sum: c4caa512c08f058672d7c2f02f2a080247648600a904dcf2c955462f5583c930
+Description:  Kernel modules for Transparent Proxying
+
+Package: kmod-lib-crc-ccitt
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 1292
+Filename: kmod-lib-crc-ccitt_4.14.171-1_x86_64.ipk
+Size: 2049
+SHA256sum: 4e9aea7dcdb0ea8aed54ad5df970325454c92d48300e2125022b35358aee7ebe
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-mii
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 3728
+Filename: kmod-mii_4.14.171-1_x86_64.ipk
+Size: 4443
+SHA256sum: 051175f972429edfd3c75ec1d1cde531fd20588ab2dfa7c187dd57ccc75422ea
+Description:  MII library
+
+Package: kmod-nf-conntrack-netlink
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nfnetlink, kmod-ipt-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack-netlink
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 13547
+Filename: kmod-nf-conntrack-netlink_4.14.171-1_x86_64.ipk
+Size: 14310
+SHA256sum: 77e3dde2491d05102d04680dffc5a688318050d794e458d913625bc9980b22ae
+Description:  Kernel modules support for a netlink-based connection tracking
+ userspace interface
+
+Package: kmod-nf-conntrack6
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack6
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 8381
+Filename: kmod-nf-conntrack6_4.14.171-1_x86_64.ipk
+Size: 9117
+SHA256sum: 21f6933ecc34ed39bc95346c4a616a28c1526343e3bedeaee65c81f0c193ec64
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 41484
+Filename: kmod-nf-conntrack_4.14.171-1_x86_64.ipk
+Size: 42252
+SHA256sum: ae04a0e415f03d5055411a5c252ddf9147f944f62405abca0510064cb7426b62
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 9615
+Filename: kmod-nf-flow_4.14.171-1_x86_64.ipk
+Size: 10350
+SHA256sum: 2809ea8b3ab61cb983fcf1fbff6d584495d73c9d2b3777b9d09a012d1bb665c7
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nf-ipt
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt6
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 7581
+Filename: kmod-nf-ipt6_4.14.171-1_x86_64.ipk
+Size: 8325
+SHA256sum: e1b26ce35b92d5382143d4dfbfccca642b7fd3cfda1fc88543335a662d614fdc
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 15332
+Filename: kmod-nf-ipt_4.14.171-1_x86_64.ipk
+Size: 16030
+SHA256sum: b66d64a6c2118e14b40c13bc9d373dede4a874d0489012ffe4f6769bc415318b
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 11195
+Filename: kmod-nf-nat_4.14.171-1_x86_64.ipk
+Size: 11926
+SHA256sum: 890e9e1d908551e0b8a1e92b8fb4f56ae73e06567761c1b6b34108cae245b09f
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject6
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 2164
+Filename: kmod-nf-reject6_4.14.171-1_x86_64.ipk
+Size: 2879
+SHA256sum: 0bfaf02ac3c14dfe75bc4c56a1d35cfc1a00dcb68e029381b06f0c1be5a9dbee
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 1950
+Filename: kmod-nf-reject_4.14.171-1_x86_64.ipk
+Size: 2662
+SHA256sum: 3e444ccab1b68744d5f8f2269d7cfa8649277464a6897975cdf4cb66c2fc4458
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nfnetlink
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-nfnetlink
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 3962
+Filename: kmod-nfnetlink_4.14.171-1_x86_64.ipk
+Size: 4705
+SHA256sum: 2e30ba6329c3471f1b1423f082d8aa75a2ba0617aec57f224b5c46b4f4ac719f
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-ppp
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+SourceName: kmod-ppp
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 20218
+Filename: kmod-ppp_4.14.171-1_x86_64.ipk
+Size: 20967
+SHA256sum: c34a2d56cc87e04015dc937ad9d6eaaa008dfa5532df2244a963ed0c9ed746f7
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+SourceName: kmod-pppoe
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 6983
+Filename: kmod-pppoe_4.14.171-1_x86_64.ipk
+Size: 7765
+SHA256sum: bd0a76551b0b8ec12cfda8956f37c9f91db6b2bee0590000e466e429d10b873f
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-ppp
+Source: package/kernel/linux
+SourceName: kmod-pppox
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 1517
+Filename: kmod-pppox_4.14.171-1_x86_64.ipk
+Size: 2277
+SHA256sum: 800d1cb902ec58933518e831b834854b12218aa7c4aeb53e94b9653804ccca77
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-pps
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f)
+Source: package/kernel/linux
+SourceName: kmod-pps
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 4818
+Filename: kmod-pps_4.14.171-1_x86_64.ipk
+Size: 5578
+SHA256sum: 4122e86579d5c55568267e2bd5d67358f44b936eaf6f2188d65e356e3249fd2f
+Description:  PPS (Pulse Per Second) is a special pulse provided by some GPS
+ antennae. Userland can use it to get a high-precision time
+ reference.
+
+Package: kmod-ptp
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-pps
+Source: package/kernel/linux
+SourceName: kmod-ptp
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 7252
+Filename: kmod-ptp_4.14.171-1_x86_64.ipk
+Size: 8084
+SHA256sum: 57dc0e35c1fa8a88de7de264a9dba4fa4dc82389300a4d4a5cf0d7878a86954d
+Description:  The IEEE 1588 standard defines a method to precisely
+ synchronize distributed clocks over Ethernet networks.
+
+Package: kmod-r8169
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-mii, r8169-firmware
+Source: package/kernel/linux
+SourceName: kmod-r8169
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 29808
+Filename: kmod-r8169_4.14.171-1_x86_64.ipk
+Size: 30545
+SHA256sum: 6de50293f25af50abbca24bd1338f5c2effc91c3a94465457e3451279c88c4e5
+Description:  Kernel modules for RealTek RTL-8169 PCI Gigabit Ethernet adapters
+
+Package: kmod-slhc
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-a60e1decc7262b7aff1e5f054fe9598f), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+SourceName: kmod-slhc
+License: GPL-2.0
+Section: kernel
+Architecture: x86_64
+Installed-Size: 3706
+Filename: kmod-slhc_4.14.171-1_x86_64.ipk
+Size: 4430
+SHA256sum: c147f4f5c0c3cd72b22b8cd2de424747f1276ca2ce1413bea01a6c1540dc0ecb
+Description:  Serial Line Header Compression
+
+Package: libgcc1
+Version: 7.5.0-2
+Provides: libgcc
+Source: package/libs/toolchain
+SourceName: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 32934
+Filename: libgcc1_7.5.0-2_x86_64.ipk
+Size: 33753
+SHA256sum: 890494f4293d8d670b701c7e2100e243a4f38ed0c8a5686f3c6311a0c97052de
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.3-1
+Depends: libc, libxtables12
+Provides: libip4tc
+Source: package/network/utils/iptables
+SourceName: libip4tc
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 21874
+Filename: libip4tc2_1.8.3-1_x86_64.ipk
+Size: 22565
+SHA256sum: 212dbb547ecc5dea548d7013b5fdc05821a786f808976b7d15cc5020a587eadf
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.3-1
+Depends: libc, libxtables12
+Provides: libip6tc
+Source: package/network/utils/iptables
+SourceName: libip6tc
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 21336
+Filename: libip6tc2_1.8.3-1_x86_64.ipk
+Size: 22029
+SHA256sum: 4b4ed3750163a5c2a77162c0d14335bd176021d2a15660bb83c0ab2305c35fc0
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2019-10-16-07315b6f-1
+Depends: libc, libiwinfo20181126, liblua5.1.5
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo-lua
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 6159
+Filename: libiwinfo-lua_2019-10-16-07315b6f-1_x86_64.ipk
+Size: 6982
+SHA256sum: 6bcd4ded6a353010a95af70478b2a176c37caabd69c2a7ba069f5712a8be18f4
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo20181126
+Version: 2019-10-16-07315b6f-1
+Depends: libc, libuci20130104, libubus20191227
+Provides: libiwinfo
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo
+License: GPL-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 14267
+Filename: libiwinfo20181126_2019-10-16-07315b6f-1_x86_64.ipk
+Size: 15060
+SHA256sum: 55fc34b60f5d311c6b61851fc72ca5f6c54ee9e0128841edde233f25a8f0b676
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ nl80211 and wext driver interfaces.
+
+Package: libpthread
+Version: 1.1.24-2
+Depends: libgcc1
+Source: package/libs/toolchain
+SourceName: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 126
+Filename: libpthread_1.1.24-2_x86_64.ipk
+Size: 879
+SHA256sum: 303a5354f95841f45fb1efda77117a63bc6185e5e710ed0e6a34aef5dad7b834
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-2
+Depends: libpthread
+Source: package/libs/toolchain
+SourceName: librt
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 126
+Filename: librt_1.1.24-2_x86_64.ipk
+Size: 888
+SHA256sum: d5652c03d8e411262c71123a08802324c654549dfb0e701ff37d42476df9302d
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp6
+Version: 7.5.0-2
+Provides: libstdcpp
+Source: package/libs/toolchain
+SourceName: libstdcpp
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 388587
+Filename: libstdcpp6_7.5.0-2_x86_64.ipk
+Size: 387690
+SHA256sum: 901c30525a633353bf69e4a5fcff6621fa7f8266f5d0c750c7603430e9c705ca
+Description:  GNU Standard C++ Library v3
+
+Package: libxtables12
+Version: 1.8.3-1
+Depends: libc
+Provides: libxtables
+Source: package/network/utils/iptables
+SourceName: libxtables
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 47435
+Filename: libxtables12_1.8.3-1_x86_64.ipk
+Size: 48139
+SHA256sum: ca15bdee7e952cefecda408e25d9e87b2f54bd6d8415a75bd27560cfbf02ae08
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 24
+Depends: libc, libubox20191228
+Source: package/system/mtd
+SourceName: mtd
+License: GPL-2.0+
+Section: utils
+Architecture: x86_64
+Installed-Size: 10102
+Filename: mtd_24_x86_64.ipk
+Size: 10872
+SHA256sum: ab5d3c700ce66b692ff22316ae2fb265b6e9aed4aefa1a2a82d4cdcfe62df486
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+

@@ -1,0 +1,11 @@
+Package: luci-app-ssr-plus
+Version: 177-1
+Depends: libc, shadowsocksr-libev-alt, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, pdnsd-alt, wget, lua, libuci-lua, microsocks, dns2socks, shadowsocks-libev-ss-local, shadowsocksr-libev-ssr-local, shadowsocks-libev-ss-redir, simple-obfs, tcpping, v2ray-plugin, v2ray, trojan, ipt2socks, redsocks2, shadowsocksr-libev-server
+Section: luci
+Architecture: all
+Installed-Size: 112667
+Filename: luci-app-ssr-plus_177-1_all.ipk
+Size: 111943
+SHA256sum: f6926d44e36a335962d6bb4e731900c7a87c6f79a416a2b77e9bd076b90ca8f2
+Description:  SS/SSR/V2Ray/Trojan LuCI interface
+

@@ -1,0 +1,267 @@
+Package: boost-date_time
+Version: 1.71.0-6
+Depends: libc, libstdcpp6, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 16516
+Filename: boost-date_time_1.71.0-6_x86_64.ipk
+Size: 17304
+SHA256sum: ed64bee7de0fe48c4986fbd22b98272fdcfb3eb8a8b57da78266442a93cb9fa8
+Description:  This package contains the Boost date_time library.
+
+Package: boost-program_options
+Version: 1.71.0-6
+Depends: libc, libstdcpp6, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 105322
+Filename: boost-program_options_1.71.0-6_x86_64.ipk
+Size: 106081
+SHA256sum: 338c9a9b1a76bdef7d2615caff37a557b2774fc0217be3e9c038520235c4d179
+Description:  This package contains the Boost program_options library.
+
+Package: boost-system
+Version: 1.71.0-6
+Depends: libc, libstdcpp6, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 1020
+Filename: boost-system_1.71.0-6_x86_64.ipk
+Size: 1799
+SHA256sum: b83c164c4277807cd34d4ccd0d4da53be67f4bce75ec812f23930eda4ede9046
+Description:  This package contains the Boost system library.
+
+Package: boost
+Version: 1.71.0-6
+Depends: libc, libstdcpp6, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 105
+Filename: boost_1.71.0-6_x86_64.ipk
+Size: 1238
+SHA256sum: 6507d1fe6c22f601e3068344c7df89195f1f0ca6a50a7123b26514b2262dc886
+Description:  This package provides the Boost v1.71.0 libraries.
+ Boost is a set of free, peer-reviewed, portable C++ source libraries.
+ 
+ This package provides the following run-time libraries:
+ - atomic
+ - chrono
+ - container
+ - context
+ - contract
+ - coroutine and coroutine2 (Coroutine is deprecated - use Coroutine2)
+ - date_time
+ - exception
+ - filesystem
+ - fiber
+ - graph
+ - - graph-parallel
+ - iostreams
+ - locale (Requires kernel being compiled with full language support)
+ - log
+ - math
+ - program_options
+ - python
+ - python3
+ - random
+ - regex
+ - serialization and wserialization
+ - stackstrace
+ - system
+ - thread
+ - timer
+ - type_erasure
+ - wave
+ 
+ There are many more header-only libraries supported by Boost.
+ See more at http://www.boost.org/doc/libs/1_71_0/
+
+Package: cgi-io
+Version: 16
+Depends: libc, libubox20191228, libubus20191227
+License: GPL-2.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 8383
+Filename: cgi-io_16_x86_64.ipk
+Size: 9153
+SHA256sum: c862f882572e3668e16cfb31e8d23b6af5f8194094bf8d5c1031590d5d2c9ab2
+Description:  This package contains an cgi utility that is useful for up/downloading files
+
+Package: coreutils-base64
+Version: 8.30-2
+Depends: libc, coreutils
+Alternatives: 300:/bin/base64:/usr/bin/gnu-base64
+Section: utils
+Architecture: x86_64
+Installed-Size: 23469
+Filename: coreutils-base64_8.30-2_x86_64.ipk
+Size: 24191
+SHA256sum: adec6f03fe58b2573e45864b96cdb90c9d78119938854b6f0bcac57cd6bb3047
+Description:  Full version of standard GNU base64 utility.
+
+Package: coreutils
+Version: 8.30-2
+Depends: libc
+Section: utils
+Architecture: x86_64
+Installed-Size: 105
+Filename: coreutils_8.30-2_x86_64.ipk
+Size: 917
+SHA256sum: 7a01022acf8b4488694403470888809051a6f2d98eaf10daebc68e41dc12cae9
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: ddns-scripts
+Version: 2.7.8-12
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 14996
+Filename: ddns-scripts_2.7.8-12_all.ipk
+Size: 16067
+SHA256sum: b4d3a06c987f15443f02e418574d31ad894ccce83eb27ecb1e2b031d113f3009
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: https://openwrt.org/docs/guide-user/services/ddns/client
+
+Package: etherwake
+Version: 1.09-4
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 4962
+Filename: etherwake_1.09-4_x86_64.ipk
+Size: 5849
+SHA256sum: 0c23ae299dc6bdeea159f0885e92f06aa94426d31cf6236fbf8a69b573a4a84c
+Description:  You can wake up WOL compliant Computers which have been powered down to
+ sleep mode or start WOL compliant Computers with a BIOS feature.
+ WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
+ to turn on a computer from another location over a network connection.
+ ether-wake also supports WOL passwords.
+
+Package: libcap
+Version: 2.27-1
+Depends: libc
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 6795
+Filename: libcap_2.27-1_x86_64.ipk
+Size: 7536
+SHA256sum: 4ce63059789dbda734e733db1ef8a9ef7ff23922bc4adea28f75b6563f36497c
+Description:  Linux capabilities library
+
+Package: libev
+Version: 4.25-1
+Depends: libc
+License: BSD-2-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 20673
+Filename: libev_4.25-1_x86_64.ipk
+Size: 21485
+SHA256sum: dae0dfc4a53c94573b79567f1693c2cd56b3261a873d63b53cbfeaa8ff9a3993
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libnet-1.2.x
+Version: 1.2-rc3-4
+Depends: libc, libpcap1
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 35772
+Filename: libnet-1.2.x_1.2-rc3-4_x86_64.ipk
+Size: 36590
+SHA256sum: f11cf1c78579c2dbeadf22d3d49785989b4244ca0c0bb60d02175a3c7337e636
+Description:  Low-level packet creation library
+
+Package: libpcre
+Version: 8.43-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 81808
+Filename: libpcre_8.43-1_x86_64.ipk
+Size: 82611
+SHA256sum: df90cd90e866caa490ae1f04d6031ab2fa25fbba9ad211693553f66618619c6c
+Description:  A Perl Compatible Regular Expression library
+
+Package: libsodium
+Version: 1.0.18-1
+Depends: libc
+License: ISC
+Section: libs
+Architecture: x86_64
+Installed-Size: 143685
+Filename: libsodium_1.0.18-1_x86_64.ipk
+Size: 144936
+SHA256sum: 257ac3f139e6ec3fb2c65ad1eed257aa77c078b4b2df06f94ca7fe12f6b9fbbb
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: shadowsocks-libev-config
+Version: 3.2.5-5
+Depends: libc
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 2640
+Filename: shadowsocks-libev-config_3.2.5-5_x86_64.ipk
+Size: 3388
+SHA256sum: 18f046edd15b4c78fbba974f1030f5c8617a5f726b51eea6fface2ec2601c971
+Description:  shadowsocks-libev config scripts
+
+Package: shadowsocks-libev-ss-local
+Version: 3.2.5-5
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, shadowsocks-libev-config, libpcre
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 50080
+Filename: shadowsocks-libev-ss-local_3.2.5-5_x86_64.ipk
+Size: 50926
+SHA256sum: 573786b702d409b6c8d61239b66eafcde3cb80ed3f2b08bff9fe2f3fbe31eb01
+Description:  shadowsocks-libev ss-local
+
+Package: shadowsocks-libev-ss-redir
+Version: 3.2.5-5
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, shadowsocks-libev-config
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 43073
+Filename: shadowsocks-libev-ss-redir_3.2.5-5_x86_64.ipk
+Size: 43964
+SHA256sum: dd2aefb8ad1373b1e78a80a9b09a90819cc94068352b3238516a3dcae2936dae
+Description:  shadowsocks-libev ss-redir
+
+Package: wget
+Version: 1.20.3-2
+Depends: libc, libpcre, zlib, libopenssl1.1, librt
+Provides: gnu-wget
+Alternatives: 300:/usr/bin/wget:/usr/bin/wget-ssl
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 213967
+Filename: wget_1.20.3-2_x86_64.ipk
+Size: 215091
+SHA256sum: e1fb7f2ebd90a3e4b8f0e48475b4fbe78d024bc1d2ffcb6553ddf0f81b71e14e
+Description:  Wget is a network utility to retrieve files from the Web using http
+ and ftp, the two most widely used Internet protocols. It works
+ non-interactively, so it will work in the background, after having
+ logged off. The program supports recursive retrieval of web-authoring
+ pages as well as ftp sites -- you can use wget to make mirrors of
+ archives and home pages or to travel the Web like a WWW robot.
+ This package is built with SSL support.
+
