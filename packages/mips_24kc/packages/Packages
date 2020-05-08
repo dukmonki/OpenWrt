@@ -1,0 +1,294 @@
+Package: boost-date_time
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 16635
+Filename: boost-date_time_1.71.0-4_mips_24kc.ipk
+Size: 17324
+SHA256sum: 65ee7024e0a6e863462b623f590feb4d84c5b7c8d33ce2a5c2f6e0e35c9bc48b
+Description:  This package contains the Boost date_time library.
+
+Package: boost-program_options
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 112215
+Filename: boost-program_options_1.71.0-4_mips_24kc.ipk
+Size: 112771
+SHA256sum: eb027a8f4eea3f6eee9f554bdd2ead530d1ed4c59320841b56757d693f4c8beb
+Description:  This package contains the Boost program_options library.
+
+Package: boost-system
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 1098
+Filename: boost-system_1.71.0-4_mips_24kc.ipk
+Size: 1889
+SHA256sum: af03a2e7a36af6827684146f95ff3f1f44a5576bdb9339b35d9ce60e090e6a68
+Description:  This package contains the Boost system library.
+
+Package: boost
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: boost_1.71.0-4_mips_24kc.ipk
+Size: 1237
+SHA256sum: 0221b101ecb5069f6f8ae4ab1738a3573d2527e4984709312f18c15dd8d586c7
+Description:  This package provides the Boost v1.71.0 libraries.
+ Boost is a set of free, peer-reviewed, portable C++ source libraries.
+ 
+ This package provides the following run-time libraries:
+ - atomic
+ - chrono
+ - container
+ - context
+ - contract
+ - coroutine and coroutine2 (Coroutine is deprecated - use Coroutine2)
+ - date_time
+ - exception
+ - filesystem
+ - fiber
+ - graph
+ - - graph-parallel
+ - iostreams
+ - locale (Requires kernel being compiled with full language support)
+ - log
+ - math
+ - program_options
+ - python
+ - python3
+ - random
+ - regex
+ - serialization and wserialization
+ - stackstrace
+ - system
+ - thread
+ - timer
+ - type_erasure
+ - wave
+ 
+ There are many more header-only libraries supported by Boost.
+ See more at http://www.boost.org/doc/libs/1_71_0/
+
+Package: coreutils-base64
+Version: 8.23-3
+Depends: libc, coreutils
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 17959
+Filename: coreutils-base64_8.23-3_mips_24kc.ipk
+Size: 18689
+SHA256sum: 5405289db6769df17273f58e5d55060fa8e7a462fdeacfdea11cc37a41a749bc
+Description:  Full version of standard GNU base64 utility.
+
+Package: coreutils
+Version: 8.23-3
+Depends: libc
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: coreutils_8.23-3_mips_24kc.ipk
+Size: 921
+SHA256sum: b638263017f06a029d54d1d2ceec8af514ab8d7ff94d25c0292a349c5f6dab0a
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: ddns-scripts
+Version: 2.7.8-3
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 14710
+Filename: ddns-scripts_2.7.8-3_all.ipk
+Size: 15775
+SHA256sum: 6acc7755701686be1e3613b479343d6a573ca5a2bf6da9d7a31954053f446be4
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
+
+Package: etherwake
+Version: 1.09-4
+Depends: libc
+Section: net
+Architecture: mips_24kc
+Installed-Size: 4859
+Filename: etherwake_1.09-4_mips_24kc.ipk
+Size: 5773
+SHA256sum: c25a513d565c97fc2ff31d16c350b81fa2223e7c76aa02ca9e2e6bc59cc7c57a
+Description:  You can wake up WOL compliant Computers which have been powered down to
+ sleep mode or start WOL compliant Computers with a BIOS feature.
+ WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
+ to turn on a computer from another location over a network connection.
+ ether-wake also supports WOL passwords.
+
+Package: libev
+Version: 4.22-1
+Depends: libc
+License: BSD-2-Clause
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 20896
+Filename: libev_4.22-1_mips_24kc.ipk
+Size: 21703
+SHA256sum: 810bb648b86cfe4defcc4d02e79273136bddd3f25938c661ba87978414f63af9
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libnet-1.2.x
+Version: 1.2-rc3-4
+Depends: libc, libpcap
+License: GPL-2.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 29720
+Filename: libnet-1.2.x_1.2-rc3-4_mips_24kc.ipk
+Size: 30498
+SHA256sum: dae3eb810bf7022b52d29c4c1ea841163ea78302bba64bdd7cec2aafdaca9a92
+Description:  Low-level packet creation library
+
+Package: libpcre
+Version: 8.41-2
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 80423
+Filename: libpcre_8.41-2_mips_24kc.ipk
+Size: 81292
+SHA256sum: 66c37b64b7ea54ba2d7673e1bd2f7f3be739c228421370a105c7ae9bedc9f513
+Description:  A Perl Compatible Regular Expression library
+
+Package: libsodium
+Version: 1.0.16-1
+Depends: libc
+License: ISC
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 132448
+Filename: libsodium_1.0.16-1_mips_24kc.ipk
+Size: 133560
+SHA256sum: a7a722dd7c9de42195ee942a944b959b1fe7891d48956ffc7eb2d2aed63491e7
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: luci-app-sqm
+Version: 1.4.0-2
+Depends: libc, lua, luci-base, sqm-scripts
+License: GPLv2
+Section: luci
+Architecture: all
+Installed-Size: 4005
+Filename: luci-app-sqm_1.4.0-2_all.ipk
+Size: 4962
+SHA256sum: a5e54963c06655c4780a6d3aea79a9ab5e073ca23f4edf09e1b8c3935aa62330
+Description:  Luci interface for the SQM scripts queue management configuration package.
+
+Package: miniupnpd
+Version: 2.0.20170421-3
+Depends: libc, iptables, libip4tc2, libuuid
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 47205
+Filename: miniupnpd_2.0.20170421-3_mips_24kc.ipk
+Size: 48061
+SHA256sum: 52ee929901f5a24d6e9c33831d1f818e43fa3238c7e1198595f90b154e343135
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mwan3
+Version: 2.6.18-1
+Depends: libc, ip, ipset, iptables, iptables-mod-conntrack-extra, iptables-mod-ipopt, jshn
+License: GPLv2
+Section: net
+Architecture: all
+Installed-Size: 11105
+Filename: mwan3_2.6.18-1_all.ipk
+Size: 12125
+SHA256sum: 04b5b9f8b94ab77cec1d590cf9349d3db45754d5cbe09d414623ed32b7afc5cd
+Description:  Hotplug script which makes configuration of multiple WAN interfaces simple
+ and manageable. With loadbalancing/failover support for up to 250 wan
+ interfaces, connection tracking and an easy to manage traffic ruleset.
+
+Package: nlbwmon
+Version: 2019-06-06-4574e6e8-1
+Depends: libc, libubox20170601, libnl-tiny, zlib, kmod-nf-conntrack-netlink
+License: ISC
+Section: net
+Architecture: mips_24kc
+Installed-Size: 15826
+Filename: nlbwmon_2019-06-06-4574e6e8-1_mips_24kc.ipk
+Size: 16599
+SHA256sum: 515e43977ec43f4d9532f33750db1e1d97efc84ead1b03e2bbaf4d81aedf4e5e
+Description:  LEDE Traffic Usage Monitor
+
+Package: shadowsocks-libev-ss-local
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, libpcre
+License: GPL-3.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 46978
+Filename: shadowsocks-libev-ss-local_3.3.4-1_mips_24kc.ipk
+Size: 47102
+SHA256sum: 647c6062671863388492f2d2a9be40f1007d978143b13e42b70a2e33af389880
+Description:  shadowsocks-libev ss-local
+
+Package: shadowsocks-libev-ss-redir
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium
+License: GPL-3.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 40535
+Filename: shadowsocks-libev-ss-redir_3.3.4-1_mips_24kc.ipk
+Size: 40776
+SHA256sum: 53cd77a94657327416e78fba24913dc13c28b2d4cd1cdda986257ba7d4766cc4
+Description:  shadowsocks-libev ss-redir
+
+Package: sqm-scripts
+Version: 1.4.0-2
+Depends: libc, tc, kmod-sched-core, kmod-sched-cake, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
+License: GPLv2
+Section: net
+Architecture: all
+Installed-Size: 17906
+Filename: sqm-scripts_1.4.0-2_all.ipk
+Size: 18784
+SHA256sum: 999116dfb387c947e2e8b4a98f7262724042db89089c42e4a74316edcaf62e7b
+Description:  A set of scripts that does simple SQM configuration.
+
+Package: wget
+Version: 1.20.3-3
+Depends: libc, libpcre, zlib, libopenssl1.1, librt
+Provides: gnu-wget
+Alternatives: 300:/usr/bin/wget:/usr/bin/wget-ssl
+License: GPL-3.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 182646
+Filename: wget_1.20.3-3_mips_24kc.ipk
+Size: 183178
+SHA256sum: c9afa85166e766eb86aa501fda89dbb93065072d8a366ecb47dfba694aff6d2a
+Description:  Wget is a network utility to retrieve files from the Web using http
+ and ftp, the two most widely used Internet protocols. It works
+ non-interactively, so it will work in the background, after having
+ logged off. The program supports recursive retrieval of web-authoring
+ pages as well as ftp sites -- you can use wget to make mirrors of
+ archives and home pages or to travel the Web like a WWW robot.
+ This package is built with SSL support.
+
+
+
